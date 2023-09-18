@@ -7,7 +7,7 @@ RPi.GPIO.setmode(RPi.GPIO.BCM)
 ## hardware 
 ledRed = LED(14)
 ledBlue = LED(15)
-ledGreen = LED(16)
+ledGreen = LED(18)
 
 ## GUI DEFINITIONS ##
 win = Tk()
@@ -51,11 +51,11 @@ def ledAllToggle():
      
 
 ###WIDGETS###
-ledRedButton1 = Button(win,  text = 'Turn Red LED On', font= myFont, command=ledRedToggle,  bg= 'bisque2', height =1, width=24)
+ledRedButton1 = Button(win,  text = 'Turn Red LED On', font= myFont, command=ledRedToggle,  bg= 'tomato', height =1, width=24)
 ledRedButton1.grid(row=0, column=1)
-ledBlueButton2 = Button(win,  text = 'Turn White LED On', font= myFont, command=ledBlueToggle,  bg= 'bisque2', height =1, width=24)
+ledBlueButton2 = Button(win,  text = 'Turn White LED On', font= myFont, command=ledBlueToggle,  bg= 'aquamarine', height =1, width=24)
 ledBlueButton2.grid(row=0, column=2)
-ledGreenButton3 = Button(win,  text = 'Turn Green LED On', font= myFont, command=ledGreenToggle,  bg= 'bisque2', height =1, width=24)
+ledGreenButton3 = Button(win,  text = 'Turn Green LED On', font= myFont, command=ledGreenToggle,  bg= 'green yellow', height =1, width=24)
 ledGreenButton3.grid(row=0, column=3)
 ledAllButton4= Button(win,  text = 'Turn All LED On', font= myFont, command=ledAllToggle,  bg= 'bisque2', height =1, width=24)
 ledAllButton4.grid(row=0, column=4)
